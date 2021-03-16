@@ -8,7 +8,7 @@ private boolean[][] buffer; //2d array of booleans to store state of buttons arr
 private boolean running = true; //used to start and stop program
 
 public void setup () {
-  size(1000, 1000);
+  size(800, 800);
   frameRate(5);
   // make the manager
   Interactive.make( this );
@@ -123,8 +123,8 @@ public class Life {
   private boolean alive;
 
   public Life (int row, int col) {
-    width = 1000/NUM_COLS;
-    height = 1000/NUM_ROWS;
+    width = 800/NUM_COLS;
+    height = 800/NUM_ROWS;
     myRow = row;
     myCol = col; 
     x = myCol*width;
